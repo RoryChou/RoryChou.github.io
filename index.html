@@ -1,10 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/index.css">
+
 </head>
 <body>
-	Hello World!
+
+    <div id="view">
+
+    </div>
+
+    <footer class="nav">
+        <ul>
+            <li>
+                <a href="#home">
+                    <span class="iconfont icon-shouyeshouye "></span>
+                    首页
+                </a>
+            </li>
+            <li>
+                <a href="#fenlei">
+                    <span class="iconfont icon-fenlei "></span>
+                    分类
+                </a>
+            </li>
+            <li>
+                <a href="#cart">
+                    <span class="iconfont icon-gouwuche"></span>
+                    购物车
+                </a>
+            </li>
+            <li>
+                <a href="#myshow">
+                    <span class="iconfont icon-iconfontwode "></span>
+                    我的秀
+                </a>
+            </li>
+            <li>
+                <a href="#more">
+                    <span class="iconfont icon-gengduo "></span>
+                    更多
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="http://cdn.bootcss.com/zepto/1.2.0/zepto.min.js"></script>
+    <script src="http://cdn.bootcss.com/Swiper/3.4.1/js/swiper.jquery.js"></script>
+    <script src="js/libs/iscroll.js"></script>
+    <script src="js/libs/vipspa.js"></script>
+    <script src="http://static.runoob.com/assets/jquery-validation-1.14.0/lib/jquery.js"></script>
+    <script src="http://static.runoob.com/assets/jquery-validation-1.14.0/dist/jquery.validate.min.js"></script>
+    <script src="js/utils/rem.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        //router
+        (function () {
+            //启动前端路由
+            vipspa.start({
+                view:'#view',//匹配的路由信息 在那个元素显示
+                router:{ //路由配置
+                    //状态:{templateUrl:'模板地址',controller:'js操作路径' }
+                    "home":{
+                        templateUrl:'views/index/home.html',
+                        controller: 'js/index/home.js'
+                    },
+                    "fenlei":{
+                        templateUrl:'views/index/fenlei.html',
+                        controller: 'js/index/feilei.js'
+                    },
+                    "cart":{
+                        templateUrl:'views/index/cart.html',
+                        controller: 'js/index/cart.js'
+                    },
+                    "myshow":{
+                        templateUrl:'views/index/myshow.html',
+                        controller: 'js/index/myshow.js'
+                    },
+                    "more":{
+                        templateUrl:'views/index/more.html',
+                        controller: 'js/index/more.js'
+                    },
+                    "login":{
+                        templateUrl:'views/index/login.html',
+                        controller: 'js/index/login.js'
+                    },
+                    "logup":{
+                        templateUrl:'views/index/logup.html',
+                        controller: 'js/index/logup.js'
+                    },
+                    'defaults':'home'
+                }
+            })
+        })();
+    </script>
 </body>
 </html>
