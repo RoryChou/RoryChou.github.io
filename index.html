@@ -1,106 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>Title</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/swiper.min.css">
-    <link rel="stylesheet" href="css/animate.min.css">
-    <link rel="stylesheet" href="css/iconfont.css">
-    <link rel="stylesheet" href="css/index.css">
-
-</head>
-<body>
-
-    <div id="view">
-
-    </div>
-
-    <footer class="nav">
-        <ul>
-            <li>
-                <a href="#home">
-                    <span class="iconfont icon-shouyeshouye "></span>
-                    首页
-                </a>
-            </li>
-            <li>
-                <a href="#fenlei">
-                    <span class="iconfont icon-fenlei "></span>
-                    分类
-                </a>
-            </li>
-            <li>
-                <a href="#cart">
-                    <span class="iconfont icon-gouwuche"></span>
-                    购物车
-                </a>
-            </li>
-            <li>
-                <a href="#myshow">
-                    <span class="iconfont icon-iconfontwode "></span>
-                    我的秀
-                </a>
-            </li>
-            <li>
-                <a href="#more">
-                    <span class="iconfont icon-gengduo "></span>
-                    更多
-                </a>
-            </li>
-        </ul>
-    </footer>
-
-    <script src="js/libs/zepto.min.js"></script>
-    <script src="js/libs/swiper.jquery.min.js"></script>
-    <script src="js/libs/iscroll.js"></script>
-    <script src="js/libs/vipspa.js"></script>
-    <script src="js/libs/jquery.min.js"></script>
-    <script src="js/libs/jquery.validate.min.js"></script>
-    <script src="js/utils/rem.js"></script>
-    <script src="js/main.js"></script>
-    <script>
-        //router
-        (function () {
-            //启动前端路由
-            vipspa.start({
-                view:'#view',//匹配的路由信息 在那个元素显示
-                router:{ //路由配置
-                    //状态:{templateUrl:'模板地址',controller:'js操作路径' }
-                    "home":{
-                        templateUrl:'views/index/home.html',
-                        controller: 'js/index/home.js'
-                    },
-                    "fenlei":{
-                        templateUrl:'views/index/fenlei.html',
-                        controller: 'js/index/feilei.js'
-                    },
-                    "cart":{
-                        templateUrl:'views/index/cart.html',
-                        controller: 'js/index/cart.js'
-                    },
-                    "myshow":{
-                        templateUrl:'views/index/myshow.html',
-                        controller: 'js/index/myshow.js'
-                    },
-                    "more":{
-                        templateUrl:'views/index/more.html',
-                        controller: 'js/index/more.js'
-                    },
-                    "login":{
-                        templateUrl:'views/index/login.html',
-                        controller: 'js/index/login.js'
-                    },
-                    "logup":{
-                        templateUrl:'views/index/logup.html',
-                        controller: 'js/index/logup.js'
-                    },
-                    'defaults':'home'
-                }
-            })
-        })();
-    </script>
-</body>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Nebula UI</title>
+    <meta name="description" content="Determinacy for better user experience of enterprise applications">
+    
+    
+    <link rel="preload" href="/assets/css/styles.d2db35ab.css" as="style"><link rel="preload" href="/assets/js/app.d2db35ab.js" as="script"><link rel="preload" href="/assets/js/84.30cff232.js" as="script"><link rel="prefetch" href="/assets/js/51.9889a8b9.js"><link rel="prefetch" href="/assets/css/1.styles.5728c6e4.css"><link rel="prefetch" href="/assets/js/1.5728c6e4.js"><link rel="prefetch" href="/assets/css/2.styles.ecc13a15.css"><link rel="prefetch" href="/assets/js/2.ecc13a15.js"><link rel="prefetch" href="/assets/js/3.492bd97d.js"><link rel="prefetch" href="/assets/js/4.58c04d2e.js"><link rel="prefetch" href="/assets/js/5.80339923.js"><link rel="prefetch" href="/assets/js/6.9dcd6f06.js"><link rel="prefetch" href="/assets/js/7.405c126e.js"><link rel="prefetch" href="/assets/js/8.99eab7f3.js"><link rel="prefetch" href="/assets/js/9.2adbe396.js"><link rel="prefetch" href="/assets/js/10.3563a59c.js"><link rel="prefetch" href="/assets/js/11.087beb56.js"><link rel="prefetch" href="/assets/js/12.1cc7b4d1.js"><link rel="prefetch" href="/assets/js/13.ce24eccb.js"><link rel="prefetch" href="/assets/js/14.bddc4d96.js"><link rel="prefetch" href="/assets/js/15.8149004b.js"><link rel="prefetch" href="/assets/js/16.c453ce35.js"><link rel="prefetch" href="/assets/css/17.styles.a2aa427f.css"><link rel="prefetch" href="/assets/js/17.a2aa427f.js"><link rel="prefetch" href="/assets/css/18.styles.bc8393bf.css"><link rel="prefetch" href="/assets/js/18.bc8393bf.js"><link rel="prefetch" href="/assets/js/19.f7e8bec9.js"><link rel="prefetch" href="/assets/js/20.e4a1823b.js"><link rel="prefetch" href="/assets/css/21.styles.aa0a7c01.css"><link rel="prefetch" href="/assets/js/21.aa0a7c01.js"><link rel="prefetch" href="/assets/js/22.f8da5b6c.js"><link rel="prefetch" href="/assets/js/23.c852770b.js"><link rel="prefetch" href="/assets/css/24.styles.4bc2c012.css"><link rel="prefetch" href="/assets/js/24.4bc2c012.js"><link rel="prefetch" href="/assets/js/25.e6d77313.js"><link rel="prefetch" href="/assets/js/26.8e1db25d.js"><link rel="prefetch" href="/assets/css/27.styles.d15f949a.css"><link rel="prefetch" href="/assets/js/27.d15f949a.js"><link rel="prefetch" href="/assets/js/28.3040a820.js"><link rel="prefetch" href="/assets/css/29.styles.ead7ed53.css"><link rel="prefetch" href="/assets/js/29.ead7ed53.js"><link rel="prefetch" href="/assets/js/30.205bcdff.js"><link rel="prefetch" href="/assets/js/31.63ef0058.js"><link rel="prefetch" href="/assets/js/32.dc1118ff.js"><link rel="prefetch" href="/assets/js/33.b4ba0042.js"><link rel="prefetch" href="/assets/js/34.8d17ce9b.js"><link rel="prefetch" href="/assets/js/35.e604a5c7.js"><link rel="prefetch" href="/assets/js/36.1444aa1d.js"><link rel="prefetch" href="/assets/css/37.styles.0ed91e5e.css"><link rel="prefetch" href="/assets/js/37.0ed91e5e.js"><link rel="prefetch" href="/assets/js/38.bafb8242.js"><link rel="prefetch" href="/assets/js/39.094000c0.js"><link rel="prefetch" href="/assets/js/40.185b61b7.js"><link rel="prefetch" href="/assets/css/41.styles.8b6bcaea.css"><link rel="prefetch" href="/assets/js/41.8b6bcaea.js"><link rel="prefetch" href="/assets/css/42.styles.eb8e4d1b.css"><link rel="prefetch" href="/assets/js/42.eb8e4d1b.js"><link rel="prefetch" href="/assets/js/43.2ce4f2b4.js"><link rel="prefetch" href="/assets/css/44.styles.3d250d99.css"><link rel="prefetch" href="/assets/js/44.3d250d99.js"><link rel="prefetch" href="/assets/js/45.6b541ade.js"><link rel="prefetch" href="/assets/js/46.27108a6b.js"><link rel="prefetch" href="/assets/js/47.f38ed04b.js"><link rel="prefetch" href="/assets/css/48.styles.e1d9866b.css"><link rel="prefetch" href="/assets/js/48.e1d9866b.js"><link rel="prefetch" href="/assets/js/49.87c24d52.js"><link rel="prefetch" href="/assets/js/50.f1652e68.js"><link rel="prefetch" href="/assets/js/52.41199a43.js"><link rel="prefetch" href="/assets/js/53.ba01c610.js"><link rel="prefetch" href="/assets/js/54.5fd015ef.js"><link rel="prefetch" href="/assets/css/55.styles.4fa1d77c.css"><link rel="prefetch" href="/assets/js/55.4fa1d77c.js"><link rel="prefetch" href="/assets/js/56.f972be57.js"><link rel="prefetch" href="/assets/js/57.5f4fe99a.js"><link rel="prefetch" href="/assets/js/58.62d52311.js"><link rel="prefetch" href="/assets/js/59.53dab9c8.js"><link rel="prefetch" href="/assets/css/60.styles.4e0c9a73.css"><link rel="prefetch" href="/assets/js/60.4e0c9a73.js"><link rel="prefetch" href="/assets/js/61.095a2006.js"><link rel="prefetch" href="/assets/js/62.8954420a.js"><link rel="prefetch" href="/assets/js/63.01e9d3c8.js"><link rel="prefetch" href="/assets/js/64.d233be0b.js"><link rel="prefetch" href="/assets/js/65.a933ff6a.js"><link rel="prefetch" href="/assets/js/66.74b1bee8.js"><link rel="prefetch" href="/assets/js/67.d5cd8ae1.js"><link rel="prefetch" href="/assets/js/68.a03fe803.js"><link rel="prefetch" href="/assets/js/69.3eb425bb.js"><link rel="prefetch" href="/assets/css/70.styles.f6c49b7b.css"><link rel="prefetch" href="/assets/js/70.f6c49b7b.js"><link rel="prefetch" href="/assets/js/71.7d04cc7b.js"><link rel="prefetch" href="/assets/js/72.bab5002a.js"><link rel="prefetch" href="/assets/js/73.d6d4016a.js"><link rel="prefetch" href="/assets/css/74.styles.0f9755ec.css"><link rel="prefetch" href="/assets/js/74.0f9755ec.js"><link rel="prefetch" href="/assets/js/75.f9c4a8ca.js"><link rel="prefetch" href="/assets/js/76.690009f6.js"><link rel="prefetch" href="/assets/js/77.47380f57.js"><link rel="prefetch" href="/assets/js/78.0488bac8.js"><link rel="prefetch" href="/assets/js/79.8daec9fe.js"><link rel="prefetch" href="/assets/js/80.c8ed1c70.js"><link rel="prefetch" href="/assets/js/81.ee08540d.js"><link rel="prefetch" href="/assets/js/82.3dc884d1.js"><link rel="prefetch" href="/assets/css/83.styles.8177457b.css"><link rel="prefetch" href="/assets/js/83.8177457b.js"><link rel="prefetch" href="/assets/js/85.d06446f3.js"><link rel="prefetch" href="/assets/js/86.93374630.js"><link rel="prefetch" href="/assets/css/87.styles.f8038cdd.css"><link rel="prefetch" href="/assets/js/87.f8038cdd.js"><link rel="prefetch" href="/assets/js/88.27bd59cc.js"><link rel="prefetch" href="/assets/js/89.ddfe3efa.js"><link rel="prefetch" href="/assets/js/90.20fb67a6.js"><link rel="prefetch" href="/assets/js/91.62bf8870.js"><link rel="prefetch" href="/assets/js/92.59b25ba5.js"><link rel="prefetch" href="/assets/js/93.c70387d7.js"><link rel="prefetch" href="/assets/js/94.78b4c35a.js"><link rel="prefetch" href="/assets/js/95.6276f44d.js"><link rel="prefetch" href="/assets/js/96.e7ca8b5c.js"><link rel="prefetch" href="/assets/js/97.b5fe3e79.js"><link rel="prefetch" href="/assets/js/98.6db398a8.js"><link rel="prefetch" href="/assets/js/99.e4cd4a35.js"><link rel="prefetch" href="/assets/css/100.styles.cdf54ce9.css"><link rel="prefetch" href="/assets/js/100.cdf54ce9.js"><link rel="prefetch" href="/assets/js/101.b364c313.js"><link rel="prefetch" href="/assets/js/102.c34c3a23.js"><link rel="prefetch" href="/assets/js/103.ec5a8f5b.js"><link rel="prefetch" href="/assets/js/104.9520eb96.js"><link rel="prefetch" href="/assets/js/105.2b4a10ef.js"><link rel="prefetch" href="/assets/js/106.e814dd89.js"><link rel="prefetch" href="/assets/js/107.569be158.js"><link rel="prefetch" href="/assets/js/108.f7f1c0a3.js"><link rel="prefetch" href="/assets/js/109.2a29bc89.js">
+    <link rel="stylesheet" href="/assets/css/1.styles.5728c6e4.css"><link rel="stylesheet" href="/assets/css/2.styles.ecc13a15.css"><link rel="stylesheet" href="/assets/css/17.styles.a2aa427f.css"><link rel="stylesheet" href="/assets/css/18.styles.bc8393bf.css"><link rel="stylesheet" href="/assets/css/21.styles.aa0a7c01.css"><link rel="stylesheet" href="/assets/css/24.styles.4bc2c012.css"><link rel="stylesheet" href="/assets/css/27.styles.d15f949a.css"><link rel="stylesheet" href="/assets/css/29.styles.ead7ed53.css"><link rel="stylesheet" href="/assets/css/37.styles.0ed91e5e.css"><link rel="stylesheet" href="/assets/css/41.styles.8b6bcaea.css"><link rel="stylesheet" href="/assets/css/42.styles.eb8e4d1b.css"><link rel="stylesheet" href="/assets/css/44.styles.3d250d99.css"><link rel="stylesheet" href="/assets/css/48.styles.e1d9866b.css"><link rel="stylesheet" href="/assets/css/styles.d2db35ab.css"><link rel="stylesheet" href="/assets/css/55.styles.4fa1d77c.css"><link rel="stylesheet" href="/assets/css/60.styles.4e0c9a73.css"><link rel="stylesheet" href="/assets/css/70.styles.f6c49b7b.css"><link rel="stylesheet" href="/assets/css/74.styles.0f9755ec.css"><link rel="stylesheet" href="/assets/css/83.styles.8177457b.css"><link rel="stylesheet" href="/assets/css/87.styles.f8038cdd.css"><link rel="stylesheet" href="/assets/css/100.styles.cdf54ce9.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-exact-active router-link-active"><!----> <span class="site-name">Nebula UI</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="https://github.com/LVMM-PC/nebula" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/" class="nav-link router-link-exact-active router-link-active">en-US</a></li><li class="dropdown-item"><!----> <a href="/zh/" class="nav-link">简体中文</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="https://github.com/LVMM-PC/nebula" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/" class="nav-link router-link-exact-active router-link-active">en-US</a></li><li class="dropdown-item"><!----> <a href="/zh/" class="nav-link">简体中文</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/" class="active sidebar-link">Home</a></li><li><a href="/installation/" class="sidebar-link">Installation</a></li><li><a href="/button/" class="sidebar-link">Button</a></li><li><a href="/checkbox/" class="sidebar-link">Checkbox</a></li><li><a href="/radio/" class="sidebar-link">Radio</a></li><li><a href="/switch/" class="sidebar-link">Switch</a></li><li><a href="/select/" class="sidebar-link">Select</a></li><li><a href="/input/" class="sidebar-link">Input</a></li><li><a href="/input-number/" class="sidebar-link">InputNumber</a></li><li><a href="/modal/" class="sidebar-link">Modal</a></li><li><a href="/tooltip/" class="sidebar-link">Tooltip</a></li><li><a href="/form/" class="sidebar-link">Form</a></li></ul> </div> <div class="home"><div class="hero"><!----> <h1>Nebula UI</h1> <p class="description">
+      Determinacy for better user experience of enterprise applications
+    </p> <p class="action"><a href="/button/" class="nav-link action-button">Get Started →</a></p></div> <div class="features"><div class="feature"><h2>Simplicity First</h2> <p>Minimal setup with Vue-centered components library helps you focus on business.</p></div><div class="feature"><h2>Vue-Powered</h2> <p>Enjoy the dev experience of Vue + webpack, use Vue components in projects, and develop custom components with Vue.</p></div><div class="feature"><h2>Design Language</h2> <p>Based on the Ant Design, A design system with values of Nature.</p></div></div> <div class="content custom"></div> <div class="footer">
+    MIT Licensed | Copyright © 2018-present lvmama.com
+  </div></div> <!----></div></div>
+    <script src="/assets/js/84.30cff232.js" defer></script><script src="/assets/js/app.d2db35ab.js" defer></script>
+  </body>
 </html>

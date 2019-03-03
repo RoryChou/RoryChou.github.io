@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[40],{222:function(e,t,n){"use strict";n.r(t);var s=n(1),a=Object(s.a)({},function(){var e=this.$createElement,t=this._self._c||e;return t("section",[t("NebulaInput",{attrs:{placeholder:"Basic usage"}})],1)},[],!1,null,null,null);a.options.__file="basic.vue";t.default=a.exports}}]);
